@@ -38,6 +38,7 @@
       cmake
       protobuf
       ffmpeg
+      neofetch
 
       # Rust stuff
       # rustup
@@ -71,6 +72,9 @@
         [ "--height 40%" "--layout=reverse" "--border" "--inline-info" ];
     };
     htop = {
+      enable = true;
+    };
+    btop = {
       enable = true;
     };
     tmux = {

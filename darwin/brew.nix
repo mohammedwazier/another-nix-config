@@ -34,6 +34,10 @@ in {
       "visual-studio-code"
       "openvpn-connect"
 
+      # "displays"
+      "betterdisplay"
+      "ccleaner"
+
       # Office
       # "dropbox"
       "spotify"
@@ -42,6 +46,7 @@ in {
       # "mullvadvpn"
       "slack"
       "discord"
+      "libreoffice"
 
       # Dev
       # "alacritty"
