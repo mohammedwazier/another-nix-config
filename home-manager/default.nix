@@ -40,11 +40,11 @@
       ffmpeg
 
       # Rust stuff
-      rustup
-      rustc
-      rustfmt
-      cargo
-      cargo-watch
+      # rustup
+      # rustc
+      # rustfmt
+      # cargo
+      # cargo-watch
 
       # Useful nix related tools
       cachix # adding/managing alternative binary caches hosted by Cachix

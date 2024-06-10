@@ -51,6 +51,7 @@
     spotify
     postman
     rectangle
+
   ];
 
   programs = { nix-index = { enable = true; }; };
