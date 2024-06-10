@@ -37,6 +37,7 @@
       # More colors!!!111
       export TERM='xterm-256color';
       export PATH="$PATH:/opt/homebrew/bin";
+      eval "$(/opt/homebrew/bin/brew shellenv)"
     '';
 
     shellAliases = {

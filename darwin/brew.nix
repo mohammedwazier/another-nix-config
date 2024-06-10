@@ -1,9 +1,9 @@
-{ config, /*lib, pkgs,*/ ... }:
+{ config, lib, pkgs, ... }:
 
 # Using Brew until nix-darwin is patched and working with
 # /Application folder
 
-# with lib;
+with lib;
 
 let user_name = "masihkasar";
 in {
@@ -13,29 +13,26 @@ in {
 
   homebrew = {
     enable = true;
+    # enableRosetta = true;
     onActivation.cleanup = "zap";
     onActivation.upgrade = true;
     global.brewfile = true;
 
-    brews = [ "openssl" "openssl@1.1" "qemu" "rust" "stockfish" ];
-
-    # brewPrefix = mkOption {
-    #   type = types.str;
-    #   default = if pkgs.stdenv.hostPlatform.darwinArch == "aarch64" then "/opt/homebrew/bin" else "/usr/local/bin";
-    #   example = "/usr/local/bin";
-    #   description = ''
-    #     The directory where Homebrew is installed.
-    #   '';
-    # };
+    brews = [ "openssl" "openssl@1.1" "qemu" ];
 
     casks = [
       # Utils
       # "1password"
-      "raycast"
+      # "raycast"
       "rectangle"
       # "alt-tab"
       "vlc"
-      "dbeaver-community"
+      # "dbeaver-community"
+      # "dbeaverlite"
+      "brave-browser"
+      "postman"
+      "visual-studio-code"
+      "openvpn-connect"
 
       # Office
       # "dropbox"
@@ -44,6 +41,7 @@ in {
       # "obsidian"
       # "mullvadvpn"
       "slack"
+      "discord"
 
       # Dev
       # "alacritty"
@@ -54,8 +52,9 @@ in {
       "insomnia"
       # "karabiner-elements"
       # "balenaetcher"
+      "warp"
     ];
 
-    taps = [ "homebrew/cask" "homebrew/cask-versions" "homebrew/cask-drivers" ];
+    # taps = [ "homebrew/cask" "homebrew/cask-versions" "homebrew/cask-drivers" ];
   };
 }

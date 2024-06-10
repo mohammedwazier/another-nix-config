@@ -32,7 +32,7 @@
       inherit (inputs.nixpkgs.lib)
         attrValues makeOverridable optionalAttrs singleton;
 
-      defaultSystems = [ "aarch64-darwin" ];
+      defaultSystems = [ "aarch64-darwin" "x86_64-darwin" ];
 
       # Configuration for `nixpkgs`
       nixpkgsConfig = {
@@ -53,8 +53,8 @@
     in {
       darwinConfigurations = rec {
         masihkasar = darwinSystem {
-          # system = "aarch64-darwin";
-          system = "x86_64-darwin";
+          system = "aarch64-darwin";
+          #system = "x86_64-darwin";
           modules = [
             # Main `nix-darwin` config
             ./darwin

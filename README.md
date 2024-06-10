@@ -54,5 +54,6 @@ nix-collect-garbage -d
 # Run
 
 ```
-nix run nix-darwin -- switch --flake .#masihkasar
+$ install homebrew
+$ nix run nix-darwin -- switch --flake .#masihkasar
 ```

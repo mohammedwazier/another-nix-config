@@ -6,7 +6,6 @@ let
     pathsToLink = "/Applications";
   };
 in {
-  imports = [ ./brew.nix ./preferences.nix ];
 
   nix = {
     settings = {
@@ -24,6 +23,8 @@ in {
       extra-platforms = x86_64-darwin aarch64-darwin
     '';
   };
+
+  imports = [ ./brew.nix ./preferences.nix ];
 
   users.users.masihkasar = {
     name = "masihkasar";
