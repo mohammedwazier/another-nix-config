@@ -1,0 +1,20 @@
+# Resulting config
+/result
+
+# Podman
+/containers
+github-copilot
+
+# Installed packages
+/bat
+/alacritty
+/htop
+/git
+/direnv
+/tmux
+starship.toml
+/karabiner
+
+# Zed
+/zed/*
+!/zed/settings.json
