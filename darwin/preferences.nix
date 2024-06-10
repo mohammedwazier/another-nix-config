@@ -18,7 +18,7 @@ in {
       orientation = "left";
     };
 
-    screencapture.location = "${homeDir}/Desktop";
+    screencapture.location = "${homeDir}/Pictures/Screenshots";
 
     finder = {
       AppleShowAllExtensions = true;

@@ -1,9 +1,11 @@
 { pkgs, ... }: {
   programs.zsh = {
     enable = true;
-    enableSyntaxHighlighting = true;
+    # enableSyntaxHighlighting = true;
+    syntaxHighlighting.enable = true;
     enableCompletion = true;
-    enableAutosuggestions = true;
+    # enableAutosuggestions = true;
+    autosuggestion.enable = true;
 
     history = {
       size = 100000;

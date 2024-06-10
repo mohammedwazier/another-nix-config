@@ -34,10 +34,10 @@ in {
   # System configuration #
   ########################
 
-  networking = {
-    knownNetworkServices = [ "Wi-Fi" "Thunderbolt Ethernet" ];
-    dns = [ "1.1.1.1" "8.8.8.8" ];
-  };
+  # networking = {
+  #   knownNetworkServices = [ "Wi-Fi" "Thunderbolt Ethernet" ];
+  #   dns = [ "1.1.1.1" "8.8.8.8" ];
+  # };
 
   # Create /etc/bashrc that loads the nix-darwin environment.
   programs.zsh.enable = true;
@@ -51,7 +51,7 @@ in {
   environment.systemPackages = with pkgs;
     [
       tailscale
-      # terminal-notifier
+      terminal-notifier
     ];
 
   programs = { nix-index = { enable = true; }; };
