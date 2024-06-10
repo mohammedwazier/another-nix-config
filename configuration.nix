@@ -40,6 +40,17 @@
     zsh-nix-shell
     zsh-syntax-highlighting
     zsh-autocomplete
+
+    vim
+    discord
+    # terminal-notifier
+    # home-manager
+    # oh-my-zsh
+    # screenfetch
+    # openvpn
+    spotify
+    postman
+    rectangle
   ];
 
   programs = { nix-index = { enable = true; }; };

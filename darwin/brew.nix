@@ -3,7 +3,7 @@
 # Using Brew until nix-darwin is patched and working with
 # /Application folder
 
-let user_name = "robert";
+let user_name = "masihkasar";
 in {
   environment.shellInit = ''
     eval "$(${config.homebrew.brewPrefix}/brew shellenv)"
@@ -19,30 +19,30 @@ in {
 
     casks = [
       # Utils
-      "1password"
+      # "1password"
       "raycast"
       "rectangle"
-      "alt-tab"
+      # "alt-tab"
       "vlc"
       "dbeaver-community"
 
       # Office
-      "dropbox"
+      # "dropbox"
       "spotify"
-      "microsoft-office"
-      "obsidian"
-      "mullvadvpn"
+      # "microsoft-office"
+      # "obsidian"
+      # "mullvadvpn"
       "slack"
 
       # Dev
-      "alacritty"
+      # "alacritty"
       "zed"
-      "podman-desktop"
-      "datagrip"
-      "pycharm"
+      # "podman-desktop"
+      # "datagrip"
+      # "pycharm"
       "insomnia"
-      "karabiner-elements"
-      "balenaetcher"
+      # "karabiner-elements"
+      # "balenaetcher"
     ];
 
     taps = [ "homebrew/cask" "homebrew/cask-versions" "homebrew/cask-drivers" ];

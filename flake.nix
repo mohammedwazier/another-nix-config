@@ -1,5 +1,5 @@
 {
-  description = "Robert's darwin config";
+  description = "Masihkasar's darwin config";
   inputs = {
     # base imports
     utils.url = "github:numtide/flake-utils";

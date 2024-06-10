@@ -11,7 +11,7 @@
     # ./config/alacritty.nix
     ./config/starship.nix
     ./config/zsh.nix
-    ./config/vscode/default.nix
+    # ./config/vscode/default.nix
     ./config/git.nix
     # ./config/helix.nix
   ];
@@ -65,13 +65,6 @@
     };
     htop = {
       enable = true;
-      settings = {
-        hide_userland_threads = true;
-        highlight_base_name = true;
-        shadow_other_users = true;
-        show_program_path = false;
-        tree_view = false;
-      };
     };
     tmux = {
       enable = true;

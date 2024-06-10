@@ -69,79 +69,16 @@
     	# "telemetry.telemetryLevel" = "off";
     	# "terraform.telemetry.enabled" = false;
     	# "update.showReleaseNotes" = false;
-    	# "vsicons.dontShowNewVersionMessage" = true;
-    	# "workbench.welcomePage.walkthroughs.openOnInstall" = false;
-      "security.workspace.trust.untrustedFiles": "open",
-      "editor.cursorSmoothCaretAnimation": "on",
-      "editor.defaultFormatter": "esbenp.prettier-vscode",
-      "editor.formatOnSave": true,
-      "github.copilot.chat.fixTestFailures": true,
-      "liveServer.settings.donotShowInfoMsg": true,
-      "terminal.integrated.profiles.linux": {
-        "bash": {
-          "path": "bash",
-          "icon": "terminal-bash"
-        },
-        "zsh": {
-          "path": "zsh"
-        },
-        "fish": {
-          "path": "fish"
-        },
-        "tmux": {
-          "path": "tmux",
-          "icon": "terminal-tmux"
-        },
-        "pwsh": {
-          "path": "pwsh",
-          "icon": "terminal-powershell"
-        },
-        "zsh (2)": {
-          "path": "/usr/bin/zsh"
-        }
-      },
-      "terminal.integrated.defaultProfile.linux": "zsh (2)",
-      "security.allowedUNCHosts": ["wsl.localhost"],
-      "terminal.integrated.profiles.windows": {
-        "PowerShell": {
-          "source": "PowerShell",
-          "icon": "terminal-powershell"
-        },
-        "Command Prompt": {
-          "path": [
-            "${env:windir}\\Sysnative\\cmd.exe",
-            "${env:windir}\\System32\\cmd.exe"
-          ],
-          "args": [],
-          "icon": "terminal-cmd"
-        },
-        "Git Bash": {
-          "source": "Git Bash"
-        },
-        "Ubuntu-22.04 (WSL)": {
-          "path": "C:\\WINDOWS\\System32\\wsl.exe",
-          "args": ["-d", "Ubuntu-22.04"]
-        }
-      },
-      "terminal.integrated.defaultProfile.windows": "Ubuntu-22.04 (WSL)",
-      "github.copilot.editor.enableAutoCompletions": true,
-      "files.exclude": {
-        "**/.trunk/*actions/": true,
-        "**/.trunk/*logs/": true,
-        "**/.trunk/*notifications/": true,
-        "**/.trunk/*out/": true,
-        "**/.trunk/*plugins/": true
-      },
-      "files.watcherExclude": {
-        "**/.trunk/*actions/": true,
-        "**/.trunk/*logs/": true,
-        "**/.trunk/*notifications/": true,
-        "**/.trunk/*out/": true,
-        "**/.trunk/*plugins/": true
-      },
-      "workbench.sideBar.location": "right",
-      "workbench.colorTheme": "Xcode Default (Dark Customized Version)",
-      "workbench.iconTheme": "material-icon-theme"
+    	"vsicons.dontShowNewVersionMessage" = true;
+    	"workbench.welcomePage.walkthroughs.openOnInstall" = false;
+      "security.workspace.trust.untrustedFiles" = "open";
+      "editor.cursorSmoothCaretAnimation" = "on";
+      "editor.defaultFormatter" = "esbenp.prettier-vscode";
+      "editor.formatOnSave" = true;
+      "github.copilot.chat.fixTestFailures" = true;
+      "workbench.sideBar.location" = "right";
+      "workbench.colorTheme" = "Xcode Default (Dark Customized Version)";
+      "workbench.iconTheme" = "material-icon-theme";
     };
   };
 }

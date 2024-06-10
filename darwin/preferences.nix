@@ -1,6 +1,6 @@
 { ... }:
 
-let homeDir = "/Users/robert";
+let homeDir = "/Users/masihkasar";
 in {
   system.activationScripts.postActivation.text = ''
     # Stop iTunes from responding to the keyboard media keys

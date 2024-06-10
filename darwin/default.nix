@@ -25,9 +25,9 @@ in {
     '';
   };
 
-  users.users.robert = {
-    name = "robert";
-    home = "/Users/robert";
+  users.users.masihkasar = {
+    name = "masihkasar";
+    home = "/Users/masihkasar";
   };
 
   ########################
