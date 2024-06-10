@@ -1,4 +1,4 @@
-# Nix config for MacOS
+<!-- # Nix config for MacOS
 
 ![2d graphics, laptop in the middle of a cyberpunk city, screen glowing, neon lightning, with a wrench as the wallpaper 2d --ar 16:9](assets/cover.png "Generated with Midjourney: 2d graphics, laptop in the middle of a cyberpunk city, screen glowing, neon lightning, with a wrench as the wallpaper 2d --ar 16:9")
 
@@ -49,4 +49,10 @@ This repository is inspired by a lot of folks who have taken time to share their
 ```shell
 # remove unused references / old-generations
 nix-collect-garbage -d
+``` -->
+
+# Run
+
+```
+nix run nix-darwin -- switch --flake .#masihkasar
 ```

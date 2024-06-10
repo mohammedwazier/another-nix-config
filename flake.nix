@@ -29,7 +29,12 @@
 
       # Configuration for `nixpkgs`
       nixpkgsConfig = {
-        config = { allowUnfree = true; };
+        config = { 
+          allowUnfree = true;
+          # Build x86 packages on Apple Silicon
+          allowUnsupportedSystem = true;
+          allowBroken = true;
+        };
         overlays = attrValues self.overlays ++ singleton (
           # Sub in x86 version of packages that don't build on Apple Silicon yet
           final: prev:
