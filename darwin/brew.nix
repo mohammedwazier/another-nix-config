@@ -40,6 +40,7 @@ in {
       "anydesk"
 
       "battery"
+      "parsec"
 
       # Office
       # "dropbox"
