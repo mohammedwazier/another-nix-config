@@ -37,6 +37,9 @@ in {
       # "displays"
       "betterdisplay"
       "ccleaner"
+      "anydesk"
+
+      "battery"
 
       # Office
       # "dropbox"
@@ -47,6 +50,8 @@ in {
       "slack"
       "discord"
       "libreoffice"
+
+      "hot"
 
       # Dev
       # "alacritty"
