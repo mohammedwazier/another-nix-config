@@ -55,5 +55,5 @@ nix-collect-garbage -d
 
 ```
 $ install homebrew
-$ nix run nix-darwin -- switch --flake .#masihkasar
+$ nix run --extra-experimental-features "nix-command flakes" nix-darwin -- switch --flake .#masihkasar
 ```

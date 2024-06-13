@@ -1,4 +1,4 @@
-{ pkgs, ... }: {
+{ pkgs, config, ... }: {
   programs.zsh = {
     enable = true;
     # enableSyntaxHighlighting = true;
@@ -37,8 +37,13 @@
       # More colors!!!111
       export TERM='xterm-256color';
       export PATH="$PATH:/opt/homebrew/bin";
-      eval "$(/opt/homebrew/bin/brew shellenv)"
+      eval "$(${config.homebrew.brewPrefix}/brew shellenv)"
     '';
+
+    # ''(pkgs.system == "x86_64-darwin")''
+    # eval "$(/usr/local/bin/brew shellenv)"
+    # ''(pkgs.system == "aarch_64-darwin") ''
+    # eval "$(/opt/homebrew/bin/brew shellenv)"
 
     shellAliases = {
       # Open notes
