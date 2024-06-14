@@ -15,6 +15,11 @@
       plugins = [ "history" "git" ];
       theme = "robbyrussell";
     };
+    # ohMyZsh = {
+    #   enable = true;
+    #   plugins = [ "history" "git" ];
+    #   theme = "robbyrussell";
+    # };
 
     plugins = [{
       name = "nix-shell";
@@ -36,7 +41,7 @@
       # More colors!!!111
       export TERM='xterm-256color';
       export PATH="$PATH:/opt/homebrew/bin";
-      eval "$(/usr/local/bin/brew shellenv)"
+      #eval "$(/usr/local/bin/brew shellenv)"
     '';
 
     shellAliases = {

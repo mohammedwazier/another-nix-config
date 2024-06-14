@@ -32,13 +32,15 @@ in {
       "postman"
       "visual-studio-code"
       "openvpn-connect"
+      "coconutbattery"
+      "macs-fan-control"
 
       # "displays"
       "betterdisplay"
       "ccleaner"
       "anydesk"
 
-      "battery"
+      # "battery"
       "parsec"
 
       # Office

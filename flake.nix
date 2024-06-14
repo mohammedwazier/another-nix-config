@@ -4,14 +4,6 @@
     # base imports
     utils.url = "github:numtide/flake-utils";
 
-    # nixos/nix-darwin dependencies
-    # nixpkgs.url = "github:NixOS/nixpkgs/nixos-22.11";
-    # nixpkgs-darwin.url = "github:NixOS/nixpkgs/nixpkgs-22.11-darwin";
-    # nixpkgs-master.url = "github:NixOS/nixpkgs/master";
-    # home-manager = {
-    #   url = "github:nix-community/home-manager/release-22.11";
-    #   inputs.nixpkgs.follows = "nixpkgs";
-    # };
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.05";
     nixpkgs-darwin.url = "github:NixOS/nixpkgs/nixpkgs-24.05-darwin";
     nixpkgs-master.url = "github:NixOS/nixpkgs/master";
@@ -33,6 +25,7 @@
         attrValues makeOverridable optionalAttrs singleton;
 
       defaultSystems = [ "x86_64-darwin" ];
+      nixpkgs.hostPlatform = "x86_64-darwin";
 
       # Configuration for `nixpkgs`
       nixpkgsConfig = {
@@ -44,6 +37,9 @@
         };
       };
     in {
+      nix.settings.experimental-features = [ "nix-command flakes" ];
+      nix.linux-builder.enable = true;
+
       darwinConfigurations = rec {
         masihkasar = darwinSystem {
           system = "x86_64-darwin";

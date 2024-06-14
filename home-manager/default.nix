@@ -5,7 +5,7 @@
 # Mostly used for CLI tools
 
 {
-  home.stateVersion = "22.11";
+  home.stateVersion = "24.05";
 
   imports = [
     # ./config/alacritty.nix
@@ -39,13 +39,6 @@
       protobuf
       ffmpeg
       neofetch
-
-      # Rust stuff
-      # rustup
-      # rustc
-      # rustfmt
-      # cargo
-      # cargo-watch
 
       # Useful nix related tools
       cachix # adding/managing alternative binary caches hosted by Cachix
