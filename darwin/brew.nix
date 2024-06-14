@@ -13,12 +13,11 @@ in {
 
   homebrew = {
     enable = true;
-    # enableRosetta = true;
     onActivation.cleanup = "zap";
     onActivation.upgrade = true;
     global.brewfile = true;
 
-    brews = [ "openssl" "openssl@1.1" "qemu" ];
+    brews = [ "openssl" "openssl@1.1" "qemu" "llvm" ];
 
     casks = [
       # Utils
@@ -27,7 +26,7 @@ in {
       "rectangle"
       # "alt-tab"
       "vlc"
-      # "dbeaver-community"
+      "dbeaver-community"
       # "dbeaverlite"
       "brave-browser"
       "postman"
@@ -61,7 +60,7 @@ in {
       # "datagrip"
       # "pycharm"
       "insomnia"
-      # "karabiner-elements"
+      "karabiner-elements"
       # "balenaetcher"
       "warp"
     ];

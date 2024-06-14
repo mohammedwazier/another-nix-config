@@ -15,13 +15,13 @@ in {
     dock = {
       mru-spaces = false;
       tilesize = 22;
-      orientation = "left";
+      orientation = "bottom";
     };
 
     screencapture.location = "${homeDir}/Pictures/Screenshots";
 
     finder = {
-      AppleShowAllExtensions = true;
+      AppleShowAllExtensions = false;
       _FXShowPosixPathInTitle = true;
       FXEnableExtensionChangeWarning = false;
     };
@@ -39,7 +39,7 @@ in {
       AppleMeasurementUnits = "Centimeters";
       AppleMetricUnits = 1;
       AppleShowScrollBars = "Automatic";
-      AppleShowAllExtensions = true;
+      AppleShowAllExtensions = false;
       AppleTemperatureUnit = "Celsius";
       # InitialKeyRepeat                     = 15;
       KeyRepeat = 2;

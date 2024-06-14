@@ -1,10 +1,8 @@
 { pkgs, config, ... }: {
   programs.zsh = {
     enable = true;
-    # enableSyntaxHighlighting = true;
     syntaxHighlighting.enable = true;
     enableCompletion = true;
-    # enableAutosuggestions = true;
     autosuggestion.enable = true;
 
     history = {
@@ -14,7 +12,8 @@
 
     oh-my-zsh = {
       enable = true;
-      plugins = [ "history" ];
+      plugins = [ "history" "git" ];
+      theme = "robbyrussell";
     };
 
     plugins = [{
@@ -37,13 +36,8 @@
       # More colors!!!111
       export TERM='xterm-256color';
       export PATH="$PATH:/opt/homebrew/bin";
-      eval "$(${config.homebrew.brewPrefix}/brew shellenv)"
+      eval "$(/usr/local/bin/brew shellenv)"
     '';
-
-    # ''(pkgs.system == "x86_64-darwin")''
-    # eval "$(/usr/local/bin/brew shellenv)"
-    # ''(pkgs.system == "aarch_64-darwin") ''
-    # eval "$(/opt/homebrew/bin/brew shellenv)"
 
     shellAliases = {
       # Open notes

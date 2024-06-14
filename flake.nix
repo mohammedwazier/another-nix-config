@@ -59,7 +59,7 @@
                 home-manager.useGlobalPkgs = true;
                 home-manager.useUserPackages = true;
                 users.users.${primaryUser}.home = "/Users/${primaryUser}";
-                home-manager.users.masihkasar = import ./home-manager;
+                home-manager.users.${primaryUser} = import ./home-manager;
               })
           ];
         };
