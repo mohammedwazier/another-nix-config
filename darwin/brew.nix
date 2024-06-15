@@ -65,7 +65,6 @@ in {
       "karabiner-elements"
       # "balenaetcher"
       "warp"
-      "volta"
     ];
 
     # taps = [ "homebrew/cask" "homebrew/cask-versions" "homebrew/cask-drivers" ];
