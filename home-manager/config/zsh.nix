@@ -15,11 +15,6 @@
       plugins = [ "history" "git" ];
       theme = "robbyrussell";
     };
-    # ohMyZsh = {
-    #   enable = true;
-    #   plugins = [ "history" "git" ];
-    #   theme = "robbyrussell";
-    # };
 
     plugins = [{
       name = "nix-shell";

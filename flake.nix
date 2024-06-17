@@ -4,11 +4,11 @@
     # base imports
     utils.url = "github:numtide/flake-utils";
 
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.05";
-    nixpkgs-darwin.url = "github:NixOS/nixpkgs/nixpkgs-24.05-darwin";
-    nixpkgs-master.url = "github:NixOS/nixpkgs/master";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nixpkgs-darwin.url = "flake:nix-darwin";
+    nix-darwin.inputs.nixpkgs.follows = "nixpkgs";
     home-manager = {
-      url = "github:nix-community/home-manager/release-24.05";
+      url = "flake:home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     darwin = {

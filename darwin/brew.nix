@@ -21,13 +21,9 @@ in {
 
     casks = [
       # Utils
-      # "1password"
-      # "raycast"
       "rectangle"
-      # "alt-tab"
       "vlc"
       "dbeaver-community"
-      # "dbeaverlite"
       "brave-browser"
       "postman"
       "visual-studio-code"
@@ -35,36 +31,26 @@ in {
       "coconutbattery"
       "macs-fan-control"
 
-      # "displays"
       "betterdisplay"
       "ccleaner"
       "anydesk"
 
-      # "battery"
       "parsec"
 
-      # Office
-      # "dropbox"
       "spotify"
-      # "microsoft-office"
-      # "obsidian"
-      # "mullvadvpn"
       "slack"
       "discord"
-      "libreoffice"
+      # "libreoffice"
 
-      "hot"
+      # "hot"
 
       # Dev
-      # "alacritty"
+      "alacritty"
       "zed"
-      # "podman-desktop"
-      # "datagrip"
-      # "pycharm"
       "insomnia"
       "karabiner-elements"
-      # "balenaetcher"
       "warp"
+      "turbo-boost-switcher"
     ];
 
     # taps = [ "homebrew/cask" "homebrew/cask-versions" "homebrew/cask-drivers" ];

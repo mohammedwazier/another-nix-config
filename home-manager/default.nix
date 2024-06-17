@@ -19,30 +19,31 @@
   home.packages = with pkgs;
     [
       # Some basics
-      coreutils
-      curl
-      wget
-      tree
+      # coreutils
+      # curl
+      # wget
+      # tree
       # exa # ls replacement
 
       # Dev stuff
       # (agda.withPackages (p: [ p.standard-library ]))
-      jq
-      nodePackages.typescript
-      nodejs
-      nixfmt-classic
+      # jq
+      # nodePackages.typescript
+      # nodejs
+      # nixfmt-classic
       neovim
-      difftastic
-      podman
-      wrangler
-      cmake
-      protobuf
-      ffmpeg
+      # difftastic
+      # podman
+      # wrangler
+      # cmake
+      # protobuf
+      # ffmpeg
       neofetch
+      # python3
 
       # Useful nix related tools
-      cachix # adding/managing alternative binary caches hosted by Cachix
-      niv # easy dependency management for nix projects
+      # cachix # adding/managing alternative binary caches hosted by Cachix
+      # niv # easy dependency management for nix projects
 
     ] ++ lib.optionals stdenv.isDarwin [
       m-cli # useful macOS CLI commands

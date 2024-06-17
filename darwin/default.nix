@@ -9,10 +9,10 @@ in {
 
   nix = {
     settings = {
-      substituters = [ "https://cache.nixos.org/" ];
+      substituters = [ ];
       trusted-public-keys =
         # [ "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY=" ];
-        [ "cache.nixos.org-1:CNHJZBh9K4tP3EKF6FkkgeVYsS3ohTl+oS0Qa8bezVs=" ];
+        [ ];
       trusted-users = [ "@admin" ];
     };
     configureBuildUsers = true;
@@ -57,9 +57,9 @@ in {
   programs = { nix-index = { enable = true; }; };
 
   # Fonts
-  fonts = { fontDir = { enable = true; }; };
+  # fonts = { fontDir = { enable = true; }; };
 
-  fonts.fonts = with pkgs; [
+  fonts.packages = with pkgs; [
     recursive
     (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
   ];
